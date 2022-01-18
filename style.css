@@ -8,7 +8,6 @@ Error: File to import not found or unreadable: slider.
 32: @import "header";
 33: @import "burger";
 34: @import "introbox";
-35: @import "slider";
 36: @import "sectionabout";
 37: @import "sectionslider";
 38: @import "sectiongrade";
