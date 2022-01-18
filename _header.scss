@@ -1,0 +1,43 @@
+.top-level {
+    background-color: blue;
+    border: 1px solid black;
+    justify-content: space-between;
+}
+
+.mid-level {
+    background-color: yellow;
+    border: 1px solid black;
+    justify-content: space-between;
+}
+
+.bottom-level {
+    background-color: red;
+    border: 1px solid black;
+   
+}
+
+
+
+
+.top-level-left,
+.top-level-mid,
+.top-level-right {
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+
+
+.mid-level-left,
+.mid-level-mid,
+.mid-level-right {
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+.bottom-level-nav {
+    background-color: pink;
+    border: 1px solid black;
+    justify-content: space-between;
+    margin: 0 auto;
+}
