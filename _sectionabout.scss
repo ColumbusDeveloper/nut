@@ -1,0 +1,126 @@
+.section-about {
+    height: auto;
+    max-width: 1920px;
+}
+
+.section-about-title {
+    font-size: 2.67em;
+    font-weight: 300;
+    line-height: 3.52em;
+    letter-spacing: 2px;
+    text-align: center;
+    &::first-letter {
+        color: #D1A954;
+    }
+    @media (max-width:400px){  
+        line-height: 1.52em;
+        
+    }
+}
+
+.section-about-title-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width:400px){  
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+}
+
+.section-about-title_1 {
+    color: #D1A954;
+    margin-right: 20px;
+}
+
+.section-about-title_2 {
+    &::first-letter {
+        color: #fff;
+    }
+}
+
+.section-about-central {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    h5 {
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+}
+
+.section-about-container {
+    margin: 0 auto;
+}
+
+.section-about-title {
+    letter-spacing: 2px;   
+}
+
+.section-about-central_1 {
+    p {
+        font-family: "Open Sans";
+        font-size: 0.78em;
+        line-height: 1.17em;
+        text-transform: none;
+    }
+}
+
+.section-about-central {
+    p {
+        font-family: "Open Sans Condensed";
+        font-size: 0.89em;
+        line-height: 1.21em;
+        text-transform: none;
+        text-align: center;
+    }
+
+    @media (max-width:992px){  
+        align-items: center;
+        margin-bottom: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.section-about-central_2_subtitle {
+    display: flex;
+}
+
+.section-about-central_2_subtitle p:first-child {
+    color: #D1A954;
+    margin-right: 10px;
+}
+
+.section-about-box-adaptive {
+    @media (max-width:992px){  
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.section-about-central-item {
+    @media (max-width:992px){  
+        margin-bottom: 30px;
+    }
+}
+
+.section-about-central_2_img_2 {
+    margin-top: 10px;
+}
+
+.section-about-central_2_img_1 {
+    margin-top: 10px;
+}
+   
+.section-about-margin-top {
+    color: transparent;
+    font-size: 0;
+    @media (max-width:992px){  
+        font-size: 100px;
+    }
+}
+
