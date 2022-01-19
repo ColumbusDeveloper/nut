@@ -1,12 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 
 @import "reset";
-@import "all";
 @import "header";
+
 
 body {
     background-color: aqua;
     width: 1920px;
     margin: 0 auto;
+    font-size: 16px;
+    a {
+        text-decoration: none;
+    }
 
 
 }

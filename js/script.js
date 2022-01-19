@@ -157,6 +157,30 @@ if (iconMenu) {
 }
 
 
+
+const burgerIcon = document.querySelector(".navbar-toggler1");
+const burgerIconCross =document.querySelector(".navbar-toggler2");
+if (burgerIcon) {
+  
+  burgerIcon.addEventListener("click", function(e) {
+    burgerIconCross.classList.toggle("_active");
+    burgerIcon.classList.toggle("_none");
+  }) 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const menuLinks=document.querySelectorAll(".menu__box-link[data-goto]");
 // if (menuLinks>0) {
 //   menuLinks.forEach(menuLinks => {
