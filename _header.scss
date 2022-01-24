@@ -5,6 +5,12 @@
     padding-bottom: 10px;
 }
 
+.top-level-lg-plus {
+    @media (max-width:992px) {
+        display: none;
+    }
+}
+
 .top-level {
     justify-content: space-between;
     align-items: center;
@@ -160,6 +166,7 @@
     font-size: 0.8125em;
     line-height: 1em;
     margin-right: 10px;
+    text-align: center;
     
 }
 
@@ -187,7 +194,13 @@
     font-weight: 500;
     font-size: 0.94em;
     line-height: 1.1em;
+    text-align: start;
 }
+
+.header-nav-link-no-wrap {
+    white-space: nowrap;
+}
+
 
 #header-navbar-nav {
     display: flex;
@@ -208,8 +221,49 @@
     box-shadow: 0 0 0 0; 
 }
 
-
 .navbar-toggler2 {
     display: none;
 }
 
+.top-level-mobile {
+    align-items: center;
+}
+
+.top-level-mobile-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-level-mobile-mid {
+    text-align: center;
+}
+
+.top-level-mobile-tel{
+    align-items: center;
+    display: flex;
+}
+
+.mobile-tel-icon {
+    color: #337D5A;
+}
+
+.top-level-mobile-tel-link {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 0.75em;
+    line-height: 0.91em;
+    color: #000;
+    margin-left: 10px;
+}
+
+.top-level-mobile-tel-link span {
+    color: #337D5A;
+}
+
+.top-level-mobile-mid-call-back {
+    color: #337D5A;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 0.8125em;
+    line-height: 0.954em;
+}
