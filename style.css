@@ -433,11 +433,20 @@ textarea {
   }
 }
 
-.top-level {
-  justify-content: space-between;
-  align-items: center;
+.top-level-mobile {
+  display: none;
+}
+@media (max-width: 992px) {
+  .top-level-mobile {
+    display: block;
+    display: flex;
+  }
 }
 
+.top-level-left {
+  display: flex;
+  align-items: center;
+}
 .top-level-left a:not(:last-child) {
   margin-right: 20px;
 }
@@ -449,6 +458,10 @@ textarea {
   color: #93B474;
 }
 
+.top-level-mid {
+  display: flex;
+  align-items: center;
+}
 .top-level-mid p {
   color: #337D5A;
   font-family: 'Montserrat';
@@ -508,7 +521,6 @@ textarea {
 
 .mid-level-mid {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -543,6 +555,7 @@ textarea {
 
 #bag {
   color: #337D5A;
+  font-size: 40px;
 }
 
 .mid-level-right-bag-ellipse {
@@ -557,10 +570,23 @@ textarea {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 992px) {
+  .mid-level-right-bag-ellipse {
+    width: 25px;
+    height: 25px;
+    top: -1px;
+    right: -20px;
+  }
+}
 
 .mid-level-right-bag-ellipse-number {
   color: #fff;
   font-size: 10px;
+}
+@media (max-width: 992px) {
+  .mid-level-right-bag-ellipse-number {
+    font-size: 15px;
+  }
 }
 
 .mid-level-right-button {
@@ -669,6 +695,70 @@ textarea {
   font-weight: 600;
   font-size: 0.8125em;
   line-height: 0.954em;
+}
+
+.mid-level-burger {
+  display: none;
+}
+@media (max-width: 992px) {
+  .mid-level-burger {
+    display: block;
+    display: flex;
+  }
+}
+
+@media (max-width: 992px) {
+  .mid-level-lg-plus {
+    display: none;
+  }
+}
+
+.mid-level-burger-mid-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.mid-level-burger-mid {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mid-level-burger-mid-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  color: #1A2F3F;
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 0.94em;
+  line-height: 1.3em;
+}
+
+.mid-level-cross-bottom {
+  display: none;
+}
+@media (max-width: 992px) {
+  .mid-level-cross-bottom {
+    display: block;
+    display: flex;
+  }
+}
+
+.mid-level-cross-bottom-right-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.mid-level-cross-bottom-right-icon-box a:not(:last-child) {
+  margin-right: 20px;
+}
+.mid-level-cross-bottom-right-icon-box a {
+  color: #323232;
+}
+.mid-level-cross-bottom-right-icon-box a:hover {
+  color: #93B474;
 }
 
 body {
