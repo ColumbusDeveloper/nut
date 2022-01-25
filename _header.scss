@@ -203,7 +203,6 @@
 }
 
 .header-nav-link {
-    color: #1A2F3F;
     font-family: 'Raleway';
     font-weight: 500;
     font-size: 0.94em;
@@ -211,10 +210,34 @@
     text-align: start;
 }
 
+#header-nav-link {
+    color: #1A2F3F;
+    padding-left: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    &:hover {
+        color: #fff;
+        background-color: #337D5A;
+        font-weight: 700;
+        
+    }
+}
+
 .header-nav-link-no-wrap {
     white-space: nowrap;
 }
 
+.nav-item {
+    @media (max-width:768px) {
+        margin-left: -14%;
+        margin-right: -14%;
+    }
+
+    @media (min-width:768px) {
+        margin-left: -11.4%;
+        margin-right: -11.4%;
+    }
+}
 
 #header-navbar-nav {
     display: flex;
@@ -222,19 +245,16 @@
     width: 100%;
 }
 
-.navbar-light .navbar-toggler-icon {
+.navbar-toggler1 .navbar-toggler-icon {
     background-image: url('images/burger_icon.png');
     @media (max-width:992px) {
-        // position: absolute;
-        // left: -1%;
-        // top: -262%;
+        
     }
 }
 
 .navbar-toggler1._none .header-navbar-toggler-icon-cross {
     background-image: url('images/icon_cross.png');
     @media (max-width:992px) {
-      
        
     }
 }
@@ -314,6 +334,7 @@
 .mid-level-burger-mid {
     justify-content: center;
     flex-direction: column;
+    position: relative;
 }
 
 .mid-level-burger-mid-text {
@@ -336,6 +357,21 @@
     }
 }
 
+.mid-level-cross-left-link {
+    color: #323232;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 0.875em;
+    line-height: 1.3em;
+}
+
+.mid-level-cross-bottom-right-icon-box-sec,
+.mid-level-cross-bottom-right-icon-box-first
+{
+    margin-right: 30px;
+}
+
+
 .mid-level-cross-bottom-right-icon-box {
     display: flex;
     align-items: center;
@@ -352,3 +388,70 @@
     }
 }
 
+.mid-level-cross-top-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-light .navbar-toggler {
+    
+    border: none;
+}
+
+.navbar-toggler1 .navbar-toggler-icon {
+    margin-top: -540%;
+    margin-left: -200%;
+}
+
+.navbar-toggler1._none .header-navbar-toggler-icon-cross {
+    @media (max-width:768px) {
+        margin-top: -985%;
+        margin-left: 1390%;
+    }
+
+    @media (min-width:768px) {
+        // margin-top: -1251%;
+        margin-left: 1960%;
+    }
+    
+}
+
+.mid-level-burger-discount-text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    bottom: -60px;
+    z-index: 10;
+    p {
+        white-space: nowrap;
+    }
+}
+
+.mid-level-cross-top {
+    display: none;
+}
+
+.mid-level-cross-top._active {
+    display: block;
+    display: flex;
+}
+
+.mid-level-cross-bottom {
+    display: none;
+}
+
+.mid-level-cross-bottom._active {
+    display: block;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.top-level-mobile._none {
+    display: none;
+}
+
+.mid-level-burger._none {
+    display: none;
+}

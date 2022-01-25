@@ -159,14 +159,24 @@ if (iconMenu) {
 
 
 const burgerIcon = document.querySelector(".navbar-toggler1");
-const burgerIconCross =document.querySelector(".navbar-toggler2");
+const burgerIconCrossItemTop =document.querySelector(".mid-level-cross-top");
+const burgerIconCrossItemBottom =document.querySelector(".mid-level-cross-bottom");
+const burgerIconOnTop =document.querySelector(".top-level-mobile");
+const burgerIconOnBottom =document.querySelector(".mid-level-burger");
+
 if (burgerIcon) {
   
   burgerIcon.addEventListener("click", function(e) {
-    burgerIconCross.classList.toggle("_active");
     burgerIcon.classList.toggle("_none");
+    burgerIconCrossItemTop.classList.toggle("_active");
+    burgerIconCrossItemBottom.classList.toggle("_active");
+    burgerIconOnTop.classList.toggle("_none");
+    burgerIconOnBottom.classList.toggle("_none");
   }) 
 }
+
+
+
 
 
 
