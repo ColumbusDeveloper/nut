@@ -461,6 +461,7 @@ textarea {
 .top-level-mid {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .top-level-mid p {
   color: #337D5A;
@@ -522,6 +523,7 @@ textarea {
 .mid-level-mid {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .mid-level-mid-tel {
@@ -547,7 +549,6 @@ textarea {
 .mid-level-right-bag {
   display: inline-block;
   width: 25px;
-  height: 25px;
   text-align: center;
   position: relative;
   margin-right: 35px;
@@ -564,8 +565,8 @@ textarea {
   height: 12px;
   border-radius: 50%;
   background-color: #93B474;
-  top: 0;
-  right: 0;
+  top: 8px;
+  left: 25px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -601,6 +602,10 @@ textarea {
   margin-right: 10px;
   text-align: center;
 }
+.mid-level-right-button:hover {
+  color: #fff;
+  background-color: #7e2b2b;
+}
 
 .mid-level-right-text {
   color: #8A8A8A;
@@ -633,10 +638,12 @@ textarea {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-#header-nav-link:hover {
-  color: #fff;
-  background-color: #337D5A;
-  font-weight: 700;
+@media (max-width: 992px) {
+  #header-nav-link:hover {
+    color: #fff;
+    background-color: #337D5A;
+    font-weight: 700;
+  }
 }
 
 .header-nav-link-no-wrap {
@@ -655,6 +662,12 @@ textarea {
     margin-right: -11.4%;
   }
 }
+@media (min-width: 992px) {
+  .nav-item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
 #header-navbar-nav {
   display: flex;
@@ -668,6 +681,7 @@ textarea {
 
 .navbar-toggler1._none .header-navbar-toggler-icon-cross {
   background-image: url("images/icon_cross.png");
+  background-size: 75%;
 }
 
 .navbar-toggler-focus:focus {
@@ -771,17 +785,16 @@ textarea {
   }
 }
 
-.mid-level-cross-left-link {
+.mid-level-cross-left .mid-level-cross-left-link {
   color: #323232;
   font-family: 'Raleway';
   font-weight: 500;
-  font-size: 0.875em;
+  font-size: 1em;
   line-height: 1.3em;
 }
 
-.mid-level-cross-bottom-right-icon-box-sec,
-.mid-level-cross-bottom-right-icon-box-first {
-  margin-right: 30px;
+.mid-level-cross-left-link-reg {
+  margin-left: 35px;
 }
 
 .mid-level-cross-bottom-right-icon-box {
@@ -790,7 +803,7 @@ textarea {
   justify-content: flex-end;
 }
 .mid-level-cross-bottom-right-icon-box a:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 50px;
 }
 .mid-level-cross-bottom-right-icon-box a {
   color: #323232;
@@ -811,18 +824,19 @@ textarea {
 
 .navbar-toggler1 .navbar-toggler-icon {
   margin-top: -540%;
-  margin-left: -200%;
+  margin-left: -420%;
 }
 
 @media (max-width: 768px) {
   .navbar-toggler1._none .header-navbar-toggler-icon-cross {
     margin-top: -985%;
-    margin-left: 1390%;
+    margin-left: 1437%;
   }
 }
 @media (min-width: 768px) {
   .navbar-toggler1._none .header-navbar-toggler-icon-cross {
-    margin-left: 1960%;
+    margin-top: -985%;
+    margin-left: 2010%;
   }
 }
 
