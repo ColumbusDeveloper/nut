@@ -420,6 +420,10 @@ textarea {
   box-sizing: border-box;
 }
 
+.header {
+  overflow-x: hidden;
+}
+
 .container {
   background-color: #fff;
   margin: 0 auto;
@@ -469,6 +473,7 @@ textarea {
   font-weight: 600;
   font-size: 0.875em;
   text-align: center;
+  text-transform: none;
 }
 
 .top-level-right {
@@ -524,6 +529,15 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.mid-level-mid-socials a {
+  display: inline-block;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+.mid-level-mid-socials a:hover {
+  border: 2px solid violet;
 }
 
 .mid-level-mid-tel {
@@ -634,11 +648,26 @@ textarea {
 
 #header-nav-link {
   color: #1A2F3F;
-  padding-left: 15px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+}
+@media (min-width: 992px) {
+  #header-nav-link {
+    display: inline-block;
+    height: 70px;
+    text-align: center;
+    border: 2px solid transparent;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #header-nav-link:hover {
+    border-bottom-color: #337D5A;
+  }
 }
 @media (max-width: 992px) {
+  #header-nav-link {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+  }
   #header-nav-link:hover {
     color: #fff;
     background-color: #337D5A;
@@ -650,16 +679,22 @@ textarea {
   white-space: nowrap;
 }
 
+@media (max-width: 992px) {
+  .nav-item {
+    margin-left: -11.5%;
+    margin-right: -11.5%;
+  }
+}
 @media (max-width: 768px) {
   .nav-item {
     margin-left: -14%;
     margin-right: -14%;
   }
 }
-@media (min-width: 768px) {
+@media (max-width: 576px) {
   .nav-item {
-    margin-left: -11.4%;
-    margin-right: -11.4%;
+    margin-left: -60px;
+    margin-right: -60px;
   }
 }
 @media (min-width: 992px) {
@@ -738,6 +773,11 @@ textarea {
   font-weight: 600;
   font-size: 0.8125em;
   line-height: 0.954em;
+  border: 2px solid transparent;
+}
+.top-level-mobile-mid-call-back:hover {
+  border-bottom-color: #337D5A;
+  color: #337D5A;
 }
 
 .mid-level-burger {
@@ -848,13 +888,13 @@ textarea {
 }
 
 .navbar-toggler1 .navbar-toggler-icon {
-  margin-top: -540%;
-  margin-left: -420%;
+  margin-top: -597%;
+  margin-left: -333%;
 }
 
 @media (max-width: 768px) {
   .navbar-toggler1._none .header-navbar-toggler-icon-cross {
-    margin-top: -985%;
+    margin-top: -1046%;
     margin-left: 1437%;
   }
 }
@@ -867,7 +907,7 @@ textarea {
 @media (max-width: 576px) {
   .navbar-toggler1._none .header-navbar-toggler-icon-cross {
     margin-top: -165%;
-    margin-left: -26%;
+    margin-left: 7%;
     background-size: 100%;
   }
 }
@@ -916,8 +956,6 @@ body {
   max-width: 1920px;
   margin: 0 auto;
   font-size: 16px;
-  padding-left: 15px;
-  padding-right: 15px;
   overflow-x: hidden;
 }
 body a {
