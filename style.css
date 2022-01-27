@@ -538,6 +538,7 @@ textarea {
 }
 .mid-level-mid-socials a:hover {
   border: 2px solid violet;
+  background-color: violet;
 }
 
 .mid-level-mid-tel {
@@ -1103,6 +1104,11 @@ textarea {
 
 .gallery-slider {
   padding: 0;
+}
+
+.footer-icon {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 body {
