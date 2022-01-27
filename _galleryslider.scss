@@ -6,7 +6,11 @@
     position: relative;
 }
 
-.swiper-slide1:hover .gallery-slider-text {
+.swiper-slide1:hover .gallery-slider-text, .gallery-text-top-left {
+    z-index: -2;
+} 
+
+.swiper-slide1:hover .gallery-text-top-left {
     z-index: -2;
 } 
 
@@ -24,6 +28,9 @@
     line-height: 1.55em;
     color: #fff;
     text-align: center;
+    @media (max-width:576px) {
+        font-size: 1.88em;
+    }
 }
 
 .gallery-slider-text p {
@@ -37,3 +44,23 @@
         display: none;
     }
 }
+
+.gallery-text-top-left {
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 0.875em;
+    color: #fff;
+    z-index: 3;
+    display: flex;
+    position: absolute;
+    top: 12%;
+    left: 21%;
+    @media (max-width:992px) {
+        display: none;
+    }
+}
+
+.gallery-slider {
+    padding: 0;
+}
+

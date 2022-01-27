@@ -5,6 +5,9 @@
     font-weight: 500;
     font-size: 0.94em;
     line-height: 1.1em;
+    &:hover {
+        color: #337D5A;
+    }
 }
 
 .nav-footer .nav-item:not(:first-child) {

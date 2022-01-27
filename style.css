@@ -959,6 +959,9 @@ textarea {
   font-size: 0.94em;
   line-height: 1.1em;
 }
+.nav-footer .nav-item .nav-link:hover {
+  color: #337D5A;
+}
 
 .nav-footer .nav-item:not(:first-child) {
   padding-top: 15px;
@@ -1038,7 +1041,11 @@ textarea {
   position: relative;
 }
 
-.swiper-slide1:hover .gallery-slider-text {
+.swiper-slide1:hover .gallery-slider-text, .gallery-text-top-left {
+  z-index: -2;
+}
+
+.swiper-slide1:hover .gallery-text-top-left {
   z-index: -2;
 }
 
@@ -1057,6 +1064,11 @@ textarea {
   color: #fff;
   text-align: center;
 }
+@media (max-width: 576px) {
+  .gallery-slider-text h1 {
+    font-size: 1.88em;
+  }
+}
 
 .gallery-slider-text p {
   font-family: 'Raleway';
@@ -1072,8 +1084,28 @@ textarea {
   }
 }
 
+.gallery-text-top-left {
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-size: 0.875em;
+  color: #fff;
+  z-index: 3;
+  display: flex;
+  position: absolute;
+  top: 12%;
+  left: 21%;
+}
+@media (max-width: 992px) {
+  .gallery-text-top-left {
+    display: none;
+  }
+}
+
+.gallery-slider {
+  padding: 0;
+}
+
 body {
-  background-color: aqua;
   max-width: 1920px;
   margin: 0 auto;
   font-size: 16px;
