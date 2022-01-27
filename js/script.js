@@ -176,25 +176,10 @@ if (burgerIcon) {
 }
 
 
-const firstSlide = document.querySelector(".swiper-slide1");
-const galleryText =document.querySelector(".gallery-slider-text");
-if (firstSlide) {
-  
-  firstSlide.addEventListener("click", function(e) {
-    firstSlide.classList.toggle("_active");
-    galleryText.classList.toggle("_none");
-  }) 
-}
 
-const firstSlide = document.querySelector(".swiper-slide1");
-const galleryText =document.querySelector(".gallery-slider-text1");
-if (galleryText) {
-  
-  galleryText.addEventListener("click", function(e) {
-    firstSlide.classList.toggle("_active");
-    galleryText.classList.toggle("_none");
-  }) 
-}
+// document.querySelector('.gallery-slider').onclick = function() {
+// document.querySelector('.gallery-slider-text').classList.add("_none");
+// }
 
 
 

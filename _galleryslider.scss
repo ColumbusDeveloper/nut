@@ -6,6 +6,10 @@
     position: relative;
 }
 
+.swiper-slide1:hover .gallery-slider-text {
+    z-index: -2;
+} 
+
 .gallery-slider-text {
     position: absolute;
     top: 50%;
