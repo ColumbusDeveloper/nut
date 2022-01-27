@@ -1,0 +1,35 @@
+.gallery-slider {
+    margin-top: -18px;
+}
+
+.swiper-slide1 {
+    position: relative;
+}
+
+.gallery-slider-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.gallery-slider-text h1 {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 3.88em;
+    line-height: 1.55em;
+    color: #fff;
+    text-align: center;
+}
+
+.gallery-slider-text p {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 1.56em;
+    line-height: 1.83em;
+    color: #fff;
+    text-align: center;
+    @media (max-width:576px) {
+        display: none;
+    }
+}
