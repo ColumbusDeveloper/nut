@@ -11,6 +11,12 @@
 @import "imgbox";
 
 
+@mixin br {
+    border: 2px solid #000;
+    
+}
+
+
 body {
     // background-color: aqua;
     max-width: 1920px;
