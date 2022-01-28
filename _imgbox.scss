@@ -1,4 +1,113 @@
+@mixin look {
+    border: 2px solid #000;
+    height: 300px;   
+}
+
+@mixin looky {
+    border: 2px solid #000;
+    height: 300px;  
+    background-color: yellow; 
+}
+
+@mixin lookb {
+    border: 2px solid #000;
+    height: 300px;  
+    background-color: blue; 
+}
+
+.container-img-box {
+    overflow: hidden;
+}
+
 .img-box-row1 {
-    @include br;
+
+    justify-content: space-between;
+    @media (max-width:576px) {
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+.img-box-row1-left-part {
+   
     
 }
+
+.img-box-row1-right-part {
+   position: relative;
+   
+}
+
+.img-box-hover {
+    position: absolute;
+    left: 330px;
+    bottom: -62px;
+    @media (max-width:1400px) {
+        width: 50%;
+        left: 314px;
+        bottom: -39px;
+    }
+
+    @media (max-width:1200px) {
+        width: 40%;
+        left: 290px;
+        bottom: -32px;
+    }
+
+    @media (max-width:992px) {
+        left: 212px;
+        bottom: -16px;
+    }
+
+    @media (max-width:768px) {
+        width: 30%;
+        left: 168px;
+        bottom: -6px;
+    }
+}
+
+
+.img-box-row1-right-part-text {
+    position: absolute;
+    color: #fff;
+    font-family: "Montserrat";
+    top: 70px;
+    left: 60px;
+    @media (max-width:992px) {
+        top: 45px;
+        left: 55px;
+    }
+
+    @media (max-width:768px) {
+        top: 28px;
+        left: 49px;
+    }
+}
+
+
+
+.img-box-row1-right-part-text h3{
+    font-size: 1.38em;
+    font-weight: 800;
+    line-height: 1.68em;
+    @media (max-width:992px) {
+        font-size: 1em;
+    }
+    @media (max-width:768px) {
+        font-size: 0.7em;
+    }
+}
+
+.img-box-row1-right-part-text p{
+    font-size: 0.94em;
+    font-weight: 700;
+    line-height: 1.38em;
+    @media (max-width:992px) {
+        font-size: 0.7em;
+    }
+    @media (max-width:768px) {
+        font-size: 0.55em;
+    }
+}
+
