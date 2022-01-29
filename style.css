@@ -1117,18 +1117,43 @@ textarea {
   overflow: hidden;
 }
 
-.img-box-row1 {
-  justify-content: space-between;
+.img-box1 {
+  display: flex;
 }
 @media (max-width: 576px) {
-  .img-box-row1 {
+  .img-box1 {
     flex-direction: column;
-    align-items: center;
+  }
+}
+
+.img-box-row1-left-part img {
+  height: 100%;
+}
+@media (max-width: 576px) {
+  .img-box-row1-left-part img {
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1400px) {
+  .img-box-row1-left-part {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .img-box-row1-left-part {
+    margin-bottom: 15px;
   }
 }
 
 .img-box-row1-right-part {
   position: relative;
+}
+
+@media (max-width: 576px) {
+  .img_row_1_2 {
+    width: 100%;
+  }
 }
 
 .img-box-hover {
@@ -1163,6 +1188,27 @@ textarea {
     bottom: -6px;
   }
 }
+@media (max-width: 576px) {
+  .img-box-hover {
+    width: 50%;
+    left: 326px;
+    bottom: -39px;
+  }
+}
+@media (max-width: 420px) {
+  .img-box-hover {
+    width: 40%;
+    left: 286px;
+    bottom: -28px;
+  }
+}
+@media (max-width: 375px) {
+  .img-box-hover {
+    width: 40%;
+    left: 256px;
+    bottom: -28px;
+  }
+}
 
 .img-box-row1-right-part-text {
   position: absolute;
@@ -1183,6 +1229,18 @@ textarea {
     left: 49px;
   }
 }
+@media (max-width: 576px) {
+  .img-box-row1-right-part-text {
+    top: 70px;
+    left: 60px;
+  }
+}
+@media (max-width: 375px) {
+  .img-box-row1-right-part-text {
+    top: 47px;
+    left: 60px;
+  }
+}
 
 .img-box-row1-right-part-text h3 {
   font-size: 1.38em;
@@ -1199,6 +1257,16 @@ textarea {
     font-size: 0.7em;
   }
 }
+@media (max-width: 576px) {
+  .img-box-row1-right-part-text h3 {
+    font-size: 1.38em;
+  }
+}
+@media (max-width: 375px) {
+  .img-box-row1-right-part-text h3 {
+    font-size: 1em;
+  }
+}
 
 .img-box-row1-right-part-text p {
   font-size: 0.94em;
@@ -1213,6 +1281,16 @@ textarea {
 @media (max-width: 768px) {
   .img-box-row1-right-part-text p {
     font-size: 0.55em;
+  }
+}
+@media (max-width: 576px) {
+  .img-box-row1-right-part-text p {
+    font-size: 0.94em;
+  }
+}
+@media (max-width: 375px) {
+  .img-box-row1-right-part-text p {
+    font-size: 0.7em;
   }
 }
 
