@@ -176,10 +176,28 @@ if (burgerIcon) {
 }
 
 
+var videoEl = document.getElementsByTagName('video')[0];
+    playBtn = document.getElementById('playBtn');
+    videoText = document.querySelector(".video-box-text");
 
-// document.querySelector('.gallery-slider').onclick = function() {
-// document.querySelector('.gallery-slider-text').classList.add("_none");
+
+    playBtn.addEventListener('click', function () {
+      if (videoEl.paused) {
+          videoEl.play();
+          videoText.classList.toggle("_none");
+      } else {
+          videoEl.pause();
+          videoText.classList.toggle("_none");
+      }
+  }, false);
+
+
+// document.getElementById('playBtn').onclick = function() {
+// document.getElementById('video-box-text').classList.toggle("_none");
 // }
+
+
+
 
 
 
