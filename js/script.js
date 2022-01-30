@@ -191,6 +191,21 @@ var videoEl = document.getElementsByTagName('video')[0];
       }
   }, false);
 
+  var videoEl1 = document.getElementsByTagName('video')[1];
+    playBtn1 = document.getElementById('playBtn1');
+    videoText1 = document.querySelector(".video-box-text1");
+
+
+    playBtn1.addEventListener('click', function () {
+      if (videoEl1.paused) {
+          videoEl1.play();
+          videoText1.classList.toggle("_none1");
+      } else {
+          videoEl1.pause();
+          videoText1.classList.toggle("_none1");
+      }
+  }, false);
+
 
 // document.getElementById('playBtn').onclick = function() {
 // document.getElementById('video-box-text').classList.toggle("_none");
