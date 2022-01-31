@@ -1499,6 +1499,41 @@ textarea {
   background-color: violet;
 }
 
+.row-address {
+  border: 2px solid #000;
+  justify-content: space-between;
+}
+
+.container-address-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-address-map {
+  border: 2px solid #000;
+  height: 300px;
+  background-color: blue;
+}
+
+.tel {
+  display: flex;
+  flex-direction: column;
+}
+
+.tel-socials {
+  display: flex;
+  align-items: center;
+}
+
+.icon-before-mail {
+  display: flex;
+}
+
+.office-location-icon-before-address,
+.production-location-icon-before-address {
+  display: flex;
+}
+
 body {
   max-width: 1920px;
   margin: 0 auto;

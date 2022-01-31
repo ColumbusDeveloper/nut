@@ -1,0 +1,32 @@
+.row-address {
+    @include br;
+    justify-content: space-between;
+}
+
+.container-address-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-address-map {
+    @include lookb;
+}
+
+.tel {
+    display: flex;
+    flex-direction: column;
+}
+
+.tel-socials {
+    display: flex;
+    align-items: center;
+}
+
+.icon-before-mail {
+    display: flex;
+}
+
+.office-location-icon-before-address,
+.production-location-icon-before-address {
+    display: flex;
+}
