@@ -49,17 +49,17 @@
 
 .img-box-row1-right-part {
    position: relative;  
- 
 }
 
-.img-box-row1-right-part img:first-child {
-   height: 100%;
-}
 
 .img_row_1_2 {
     @media (max-width:576px) {
         width: 100%;
     }
+}
+
+.container-img-box {
+    overflow: hidden;
 }
 
 .img-box-hover {
@@ -190,7 +190,9 @@
 }
 
 #playBtn,
-#playBtn1 {
+#playBtn1,
+#playBtn2,
+#playBtn3, {
     position: absolute;
     top: 0;
     left: 0;
@@ -202,7 +204,7 @@
 
 
 
-#video-box-text
+#video-box-text-wide
  {
     padding: 0;
     position: absolute;
@@ -239,7 +241,9 @@
 }
 
 .video-box-text._none,
-.video-box-text1._none1 {
+.video-box-text1._none1,
+.video-box-text2._none2,
+.video-box-text3._none3, {
     visibility: hidden;
 }
 
@@ -274,7 +278,7 @@
     
 }
 
-#video-box-text1
+#video-box-text
  {
     padding: 0;
     position: absolute;
@@ -288,11 +292,17 @@
     font-family: 'Montserrat';
     h3 {
         font-weight: 800;
-        font-size: 0.8em;
+        font-size: 1.375em;
         line-height: 1.68em;
         margin-bottom: 10px;
+        @media (max-width:992px) {
+            font-size: 1em;
+        }
+        @media (max-width:768px) {
+            font-size: 0.5em;
+        }
         @media (max-width:468px) {
-            font-size: 0.8em;
+            font-size: 0.5em;
         }
 
         @media (max-width:576px) {
@@ -304,11 +314,14 @@
         font-size: 0.875em;
         line-height: 1.31em;
         text-align: center;
+        @media (max-width:992px) {
+            font-size: 0.5em;
+        }
         @media (max-width:768px) {
-            font-size: 0.7em;
+            font-size: 0.4em;
         }
         @media (max-width:576px) {
-            font-size: 0.5em;
+            font-size: 0.9em;
         }
     }
 
@@ -317,5 +330,57 @@
 #video-box-play-icon1 {
     width: 20%;
     margin-bottom: 20px;
+}
+
+.img-box-row4-left-part {
+    
+    img {
+        height: 100%;
+    }
+    @media (max-width:576px) {
+        margin-bottom: 20px;
+    }
+}
+
+.img-box-row4-right-part {
+    img {
+        width: 100%;
+    }
+}
+
+.btn-center-box {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 184px;
+    height: 44px;
+    border: 2px solid #337D5A;
+    &:hover {
+        background-color: violet;
+    }
+   
+    a {
+        display: inline-block;
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 0.875em;
+        line-height: 1.1em;
+        color: #337D5A;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        &:hover {
+            background-color: violet;
+        }
+        
+    }
 }
 

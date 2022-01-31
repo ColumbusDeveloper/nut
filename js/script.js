@@ -206,6 +206,36 @@ var videoEl = document.getElementsByTagName('video')[0];
       }
   }, false);
 
+  var videoEl2 = document.getElementsByTagName('video')[2];
+    playBtn2 = document.getElementById('playBtn2');
+    videoText2 = document.querySelector(".video-box-text2");
+
+
+    playBtn2.addEventListener('click', function () {
+      if (videoEl2.paused) {
+          videoEl2.play();
+          videoText2.classList.toggle("_none2");
+      } else {
+          videoEl2.pause();
+          videoText2.classList.toggle("_none2");
+      }
+  }, false);
+
+  var videoEl3 = document.getElementsByTagName('video')[3];
+    playBtn3 = document.getElementById('playBtn3');
+    videoText3 = document.querySelector(".video-box-text3");
+
+
+    playBtn3.addEventListener('click', function () {
+      if (videoEl3.paused) {
+          videoEl3.play();
+          videoText3.classList.toggle("_none3");
+      } else {
+          videoEl3.pause();
+          videoText3.classList.toggle("_none3");
+      }
+  }, false);
+
 
 // document.getElementById('playBtn').onclick = function() {
 // document.getElementById('video-box-text').classList.toggle("_none");
