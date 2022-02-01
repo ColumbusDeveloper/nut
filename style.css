@@ -1474,6 +1474,10 @@ textarea {
   width: 100%;
 }
 
+.row-address {
+  justify-content: space-between;
+}
+
 .btn-center-box {
   display: flex;
   justify-content: center;
@@ -1506,10 +1510,6 @@ textarea {
 }
 .btn-center a:hover {
   background-color: violet;
-}
-
-.row-address {
-  justify-content: space-between;
 }
 
 .container-address-text {
