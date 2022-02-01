@@ -10,6 +10,29 @@ let slider1 = new Swiper ('.slider1', {
     prevEl: '.swiper-button-prev1',
   },
 
+  breakpoints: {
+    375:{
+      slidesPerView:1,
+    },
+
+    576:{
+      slidesPerView:1,
+    },
+
+    992:{
+      slidesPerView:1,
+    },
+
+    1200:{
+      slidesPerView:1,
+    },
+
+
+
+  },
+
+  
+
 
 }) 
 
@@ -127,6 +150,7 @@ let slider4 = new Swiper ('.slider4', {
     },
 
     576:{
+
       slidesPerView:3,
     },
 

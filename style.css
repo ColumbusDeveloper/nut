@@ -1048,6 +1048,15 @@ textarea {
   position: relative;
 }
 
+.slide1-img {
+  max-width: unset;
+}
+@media (max-width: 576px) {
+  .slide1-img {
+    max-width: 800px;
+  }
+}
+
 .swiper-slide1:hover .gallery-slider-text, .gallery-text-top-left {
   z-index: -2;
 }
