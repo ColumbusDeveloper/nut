@@ -260,6 +260,8 @@ var videoEl = document.getElementsByTagName('video')[0];
       }
   }, false);
 
+  
+
 
 // document.getElementById('playBtn').onclick = function() {
 // document.getElementById('video-box-text').classList.toggle("_none");
