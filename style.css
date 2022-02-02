@@ -1783,7 +1783,10 @@ textarea {
 
 .container-img-box2 {
   margin-top: -18px;
-  max-height: 100vh;
+}
+
+.row1 {
+  display: flex;
 }
 
 @media (max-width: 576px) {
@@ -1792,7 +1795,7 @@ textarea {
   }
 }
 .production-imgbox-row1__left-part_img {
-  height: 100%;
+  max-width: 78%;
 }
 .production-imgbox-row1__right-part {
   display: flex;

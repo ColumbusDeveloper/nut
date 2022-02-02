@@ -260,8 +260,44 @@ var videoEl = document.getElementsByTagName('video')[0];
       }
   }, false);
 
-  
+  var videoEl4 = document.getElementsByTagName('video')[3];
+  var playBtn4 = document.getElementById('production-imgbox-row1__right-part_video-box-play-icon1');
+      videoText3 = document.querySelector(".production-imgbox-row1__right-part_video-box-play-icon1");
+  playBtn4.addEventListener('click', function () {
+    if (videoEl4.paused) {
+        videoEl4.play();
+        videoText3.classList.add("_none3");
+    } else {
+        videoEl4.pause();
+        videoText3.classList.add("_none3");
+    }
+}, false);
 
+var videoEl5 = document.getElementsByTagName('video')[5];
+var playBtn5 = document.getElementById('production-imgbox-row1__right-part_video-box-play-icon2');
+
+playBtn5.addEventListener('click', function () {
+  if (videoEl5.paused) {
+      videoEl5.play();
+    
+  } else {
+      videoEl5.pause();
+    
+  }
+}, false);
+
+var videoEl6 = document.getElementsByTagName('video')[6];
+var playBtn6 = document.getElementById('production-imgbox-row1__right-part_video-box-play-icon3');
+
+playBtn6.addEventListener('click', function () {
+  if (videoEl6.paused) {
+      videoEl6.play();
+  
+  } else {
+      videoEl6.pause();
+    
+  }
+}, false);
 
 // document.getElementById('playBtn').onclick = function() {
 // document.getElementById('video-box-text').classList.toggle("_none");
