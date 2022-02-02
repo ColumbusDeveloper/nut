@@ -9,8 +9,11 @@
 }
 
 .video-box-play-icon {
-    width: 20%;
+    width: 10%;
     margin-bottom: 20px;
+    @media (max-width:576px) {
+        width: 7%;
+    }
 }
 
 #playBtn,
@@ -25,8 +28,7 @@
    
 }
 
-#video-box-text-wide
- {
+#video-box-text-wide {
     padding: 0;
     position: absolute;
     display: flex;
@@ -36,26 +38,40 @@
     left: 50%;
     transform:translate(-50%,-50%) ;
     color: #fff;
-    font-family: 'Montserrat';
+    font-family: 'Raleway';
     h3 {
         font-weight: 800;
-        font-size: 1.375em;
-        line-height: 1.68em;
+        font-size: 3.88em;
+        line-height: 2.55em;
         margin-bottom: 10px;
+        @media (max-width:1200px) {
+            font-size: 1.8em;
+        }
+        @media (max-width:768px) {
+            margin-bottom: 0;
+        }
         @media (max-width:468px) {
-            font-size: 0.8em;
+            font-size: 1.3em;
         }
     }
     p {
         font-weight: 600;
-        font-size: 0.875em;
-        line-height: 1.31em;
+        font-size: 1.56em;
+        line-height: 1.83em;
         text-align: center;
+        margin-bottom: 30px;
+        max-width: 522px;
+        @media (max-width:1200px) {
+            font-size: 1.2em;
+        }
         @media (max-width:768px) {
-            font-size: 0.7em;
+            font-size: 1em;
         }
         @media (max-width:576px) {
-            font-size: 0.5em;
+            font-size: 0.8em;
+        }
+        @media (max-width:430px) {
+            margin-bottom: 10px;
         }
     }
 
@@ -66,6 +82,26 @@
 .video-box-text2._none2,
 .video-box-text3._none3, {
     visibility: hidden;
+}
+
+.gallery-text-top-left {
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 0.875em;
+    color: #fff;
+    z-index: 3;
+    display: flex;
+    position: absolute;
+    top: 12%;
+    left: 21%;
+    @media (max-width:992px) {
+        display: none;
+    }
+}
+
+.container-img-box2 {
+    margin-top: -18px;
+    max-height: 100vh;
 }
 
 
