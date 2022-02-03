@@ -261,15 +261,15 @@ var videoEl = document.getElementsByTagName('video')[0];
   }, false);
 
   var videoEl4 = document.getElementsByTagName('video')[4];
-  var playBtn4 = document.getElementById('playBtn4');
-      videoText3 = document.querySelector(".production-imgbox-row1__right-part_video-box-play-icon");
+  var playBtn4 = document.getElementById('production-imgbox-row1__right-part_video-box-play-icon1');
+      
   playBtn4.addEventListener('click', function () {
     if (videoEl4.paused) {
         videoEl4.play();
-        videoText3.classList.add("_none3");
+       
     } else {
         videoEl4.pause();
-        videoText3.classList.add("_none3");
+      
     }
 }, false);
 
