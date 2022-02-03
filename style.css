@@ -1864,8 +1864,16 @@ textarea {
   background-color: #337D5A;
 }
 
-.carousel-item {
+.carousel-inner {
   position: relative;
+}
+
+#playBtn4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .production-imgbox-row1__box {

@@ -25,6 +25,7 @@
                 top:50%;
                 left:50%;
                 transform: translate(-50%,-50%);
+                
 
             }
 
@@ -92,9 +93,22 @@
 		}
 }
 
-.carousel-item {
+.carousel-inner {
     position: relative;
 }
+
+#playBtn4 {
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+ 
+}
+
+// .carousel-item:hover .production-imgbox-row1__right-part_video-box-play-icon{
+//     display: none;
+// }
 
 
 .production-imgbox-row1 {
