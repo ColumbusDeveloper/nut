@@ -1151,6 +1151,9 @@ textarea {
   position: relative;
 }
 
+.img_row_1_2 {
+  width: 100%;
+}
 @media (max-width: 576px) {
   .img_row_1_2 {
     width: 100%;
