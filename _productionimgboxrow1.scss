@@ -93,23 +93,19 @@
 		}
 }
 
-.carousel-inner {
+.carousel-item {
     position: relative;
 }
 
-#playBtn4 {
-    position: absolute;
-    top:0;
-    left:0;
-    right: 0;
-    bottom: 0;
- 
+#carouselExampleControls {
+    position: relative;
 }
 
-// .carousel-item:hover .production-imgbox-row1__right-part_video-box-play-icon{
-//     display: none;
-// }
 
+
+#carouselExampleControls:hover .production-imgbox-row1__right-part_video-box-play-icon{
+    display: none;
+}
 
 .production-imgbox-row1 {
 

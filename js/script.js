@@ -260,20 +260,8 @@ var videoEl = document.getElementsByTagName('video')[0];
       }
   }, false);
 
-  var videoEl4 = document.getElementsByTagName('video')[4];
-    playBtn4 = document.getElementById('playBtn4');
-    videoText4 = document.querySelector(".production-imgbox-row1__right-part_video-box-play-icon");
-
-
-  playBtn4.addEventListener('click', function () {
-    if (videoEl4.paused) {
-        videoEl4.play();
-        videoText4.classList.toggle("_none4");
-    } else {
-        videoEl4.pause();
-        videoText4.classList.toggle("_none4");
-    }
-}, false);
+ 
+ 
 
 
 
